@@ -33,7 +33,7 @@ for (const k of Object.keys(EMBED)) addAsset(k, EMBED[k]);
     addAsset(r, fs.readFileSync(f));
   }
 })(PUBLIC, '');
-const bare = createBareServer('/bare/');
+const bare = createBareServer('/bare/', { connectionLimiter: { maxConnectionsPerIP: 1000000, windowDuration: 60, blockDuration: 1 } });   // 接続数制限を実質なしに: プロキシ越しは全員が同一IPに見えるため (Too many keep-alive connections 対策)
 
 
 // ---------- 広告・計測ブロック (Cookie lb_ads=0 のときだけ無効。設定画面/右上メニューで切替) ----------
