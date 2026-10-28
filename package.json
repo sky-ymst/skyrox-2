@@ -1,0 +1,13 @@
+{
+  "name": "yoroxy",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "dependencies": {
+    "@tomphttp/bare-server-node": "^2.0.0",
+    "compression": "^1.7.4",
+    "express": "^4.19.2",
+    "unblocker": "^2.3.1"
+  },
+  "engines": { "node": "20.x" }
+}
