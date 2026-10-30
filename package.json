@@ -1,18 +1,18 @@
 {
   "name": "yoroxy",
-  "version": "1.0.0.6",
+  "version": "1.0.0.7",
   "license": "AGPL-3.0-only",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "@tomphttp/bare-server-node": "^2.0.0",
     "@mercuryworkshop/bare-mux": "^2.1.9",
     "@mercuryworkshop/epoxy-transport": "^2.1.28",
     "@mercuryworkshop/libcurl-transport": "^1.5.2",
     "@mercuryworkshop/scramjet": "^1.1.0",
     "@mercuryworkshop/wisp-js": "^0.4.1",
+    "@tomphttp/bare-server-node": "^2.0.0",
     "compression": "^1.7.4",
     "express": "^4.19.2",
     "unblocker": "^2.3.1"
